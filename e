@@ -27,6 +27,7 @@ local Info_4 = Instance.new("TextLabel")
 local Info_5 = Instance.new("TextLabel")
 local rickrolldance = Instance.new("TextButton")
 local ClickThis_3 = Instance.new("TextLabel")
+local warning = Instance.new("TextLabel")
 local FlingAllFrame = Instance.new("Frame")
 local flingall = Instance.new("TextButton")
 local Info_6 = Instance.new("TextLabel")
@@ -50,6 +51,7 @@ local creditinfo = Instance.new("TextButton")
 local creditinfo_2 = Instance.new("TextButton")
 local creditinfo_3 = Instance.new("TextButton")
 local CloseGui = Instance.new("TextButton")
+local welcome = Instance.new("TextLabel")
 local OpenGui = Instance.new("TextButton")
 
 --Properties:
@@ -314,6 +316,18 @@ ClickThis_3.Text = "<-- Click to execute"
 ClickThis_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 ClickThis_3.TextSize = 27.000
 
+warning.Name = "warning"
+warning.Parent = DancesFrame
+warning.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+warning.BackgroundTransparency = 1.000
+warning.Position = UDim2.new(0.31249997, 0, 0.761284292, 0)
+warning.Size = UDim2.new(0, 200, 0, 50)
+warning.ZIndex = 200
+warning.Font = Enum.Font.SourceSansBold
+warning.Text = "When executed u have to re-execute the gui!!"
+warning.TextColor3 = Color3.fromRGB(225, 0, 0)
+warning.TextSize = 36.000
+
 FlingAllFrame.Name = "FlingAllFrame"
 FlingAllFrame.Parent = FrameGui
 FlingAllFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -394,7 +408,7 @@ antifling.Name = "antifling"
 antifling.Parent = AntiFlingFrame
 antifling.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 antifling.BackgroundTransparency = 0.700
-antifling.Position = UDim2.new(0.082386367, 0, 0.0214723926, 0)
+antifling.Position = UDim2.new(0.112154834, 0, 0.0797248185, 0)
 antifling.Size = UDim2.new(0, 200, 0, 50)
 antifling.Font = Enum.Font.SourceSansBold
 antifling.Text = "Anti-Fling"
@@ -405,7 +419,7 @@ ClickThis_5.Name = "ClickThis"
 ClickThis_5.Parent = AntiFlingFrame
 ClickThis_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ClickThis_5.BackgroundTransparency = 1.000
-ClickThis_5.Position = UDim2.new(0.399147719, 0, 0.0214723926, 0)
+ClickThis_5.Position = UDim2.new(0.383712202, 0, 0.0797248185, 0)
 ClickThis_5.Size = UDim2.new(0, 200, 0, 50)
 ClickThis_5.ZIndex = 200
 ClickThis_5.Font = Enum.Font.SourceSans
@@ -417,19 +431,19 @@ Info_9.Name = "Info"
 Info_9.Parent = AntiFlingFrame
 Info_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Info_9.BackgroundTransparency = 1.000
-Info_9.Position = UDim2.new(0.366477251, 0, 0.296536356, 0)
+Info_9.Position = UDim2.new(0.278274387, 0, 0.274691701, 0)
 Info_9.Size = UDim2.new(0, 200, 0, 50)
 Info_9.ZIndex = 200
 Info_9.Font = Enum.Font.SourceSans
 Info_9.Text = "This script is easy as it can be, all you do is simply press it and there you go."
 Info_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-Info_9.TextSize = 27.000
+Info_9.TextSize = 23.000
 
 Info_10.Name = "Info"
 Info_10.Parent = AntiFlingFrame
 Info_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Info_10.BackgroundTransparency = 1.000
-Info_10.Position = UDim2.new(0.356534064, 0, 0.39653635, 0)
+Info_10.Position = UDim2.new(0.24848555, 0, 0.415953815, 0)
 Info_10.Size = UDim2.new(0, 200, 0, 50)
 Info_10.ZIndex = 200
 Info_10.Font = Enum.Font.SourceSans
@@ -533,8 +547,8 @@ creditinfo.Name = "credit info"
 creditinfo.Parent = CreditsFrame
 creditinfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 creditinfo.BackgroundTransparency = 0.700
-creditinfo.Position = UDim2.new(0.0545329601, 0, 0.271439046, 0)
-creditinfo.Size = UDim2.new(0, 630, 0, 50)
+creditinfo.Position = UDim2.new(0.0545329601, 0, 0.271439075, 0)
+creditinfo.Size = UDim2.new(0, 596, 0, 50)
 creditinfo.Font = Enum.Font.SourceSansBold
 creditinfo.Text = "the scripting/design of this gui/hub was made by SJMSR or Sano#8913"
 creditinfo.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -544,8 +558,8 @@ creditinfo_2.Name = "credit info"
 creditinfo_2.Parent = CreditsFrame
 creditinfo_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 creditinfo_2.BackgroundTransparency = 0.700
-creditinfo_2.Position = UDim2.new(0.0545329601, 0, 0.483095467, 0)
-creditinfo_2.Size = UDim2.new(0, 630, 0, 50)
+creditinfo_2.Position = UDim2.new(0.0545329601, 0, 0.483095497, 0)
+creditinfo_2.Size = UDim2.new(0, 586, 0, 50)
 creditinfo_2.Font = Enum.Font.SourceSansBold
 creditinfo_2.Text = "If u have any questions/ suggestions add Sano#8913 or join;"
 creditinfo_2.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -575,6 +589,17 @@ CloseGui.Text = "X"
 CloseGui.TextColor3 = Color3.fromRGB(43, 209, 6)
 CloseGui.TextSize = 30.000
 
+welcome.Name = "welcome"
+welcome.Parent = FrameGui
+welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+welcome.BackgroundTransparency = 1.000
+welcome.Position = UDim2.new(0.428937256, 0, 0.459893048, 0)
+welcome.Size = UDim2.new(0, 200, 0, 50)
+welcome.Font = Enum.Font.Oswald
+welcome.Text = "Welcome to Fhytex hub🌿"
+welcome.TextColor3 = Color3.fromRGB(255, 255, 255)
+welcome.TextSize = 70.000
+
 OpenGui.Name = "OpenGui"
 OpenGui.Parent = ScreenGui
 OpenGui.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
@@ -590,7 +615,7 @@ OpenGui.TextSize = 24.000
 
 -- Scripts:
 
-local function KYPSEV_fake_script() -- NetlessButton.netlessvisible 
+local function MVLT_fake_script() -- NetlessButton.netlessvisible 
 	local script = Instance.new('LocalScript', NetlessButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -600,10 +625,11 @@ local function KYPSEV_fake_script() -- NetlessButton.netlessvisible
 		script.Parent.Parent.Parent.AntiFlingFrame.Visible = false
 		script.Parent.Parent.Parent.HubsFrame.Visible = false
 		script.Parent.Parent.Parent.FlingAllFrame.Visible = false
+		script.Parent.Parent.Parent.welcome.Visible = false
 	end)
 end
-coroutine.wrap(KYPSEV_fake_script)()
-local function WPFCGA_fake_script() -- HubsButton.hubsvisible 
+coroutine.wrap(MVLT_fake_script)()
+local function PZTCNYZ_fake_script() -- HubsButton.hubsvisible 
 	local script = Instance.new('LocalScript', HubsButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -613,10 +639,11 @@ local function WPFCGA_fake_script() -- HubsButton.hubsvisible
 		script.Parent.Parent.Parent.AntiFlingFrame.Visible = false
 		script.Parent.Parent.Parent.HubsFrame.Visible = true
 		script.Parent.Parent.Parent.FlingAllFrame.Visible = false
+		script.Parent.Parent.Parent.welcome.Visible = false
 	end)
 end
-coroutine.wrap(WPFCGA_fake_script)()
-local function NRSKOK_fake_script() -- AntiFlingButton.antiflinvisible 
+coroutine.wrap(PZTCNYZ_fake_script)()
+local function EWVS_fake_script() -- AntiFlingButton.antiflinvisible 
 	local script = Instance.new('LocalScript', AntiFlingButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -626,10 +653,11 @@ local function NRSKOK_fake_script() -- AntiFlingButton.antiflinvisible
 		script.Parent.Parent.Parent.AntiFlingFrame.Visible = true
 		script.Parent.Parent.Parent.HubsFrame.Visible = false
 		script.Parent.Parent.Parent.FlingAllFrame.Visible = false
+		script.Parent.Parent.Parent.welcome.Visible = false
 	end)
 end
-coroutine.wrap(NRSKOK_fake_script)()
-local function OEGK_fake_script() -- FlingAllButton.flingallvisible 
+coroutine.wrap(EWVS_fake_script)()
+local function KCLQHO_fake_script() -- FlingAllButton.flingallvisible 
 	local script = Instance.new('LocalScript', FlingAllButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -639,10 +667,11 @@ local function OEGK_fake_script() -- FlingAllButton.flingallvisible
 		script.Parent.Parent.Parent.AntiFlingFrame.Visible = false
 		script.Parent.Parent.Parent.HubsFrame.Visible = false
 		script.Parent.Parent.Parent.FlingAllFrame.Visible = true
+		script.Parent.Parent.Parent.welcome.Visible = false
 	end)
 end
-coroutine.wrap(OEGK_fake_script)()
-local function ULMJBXW_fake_script() -- DancesButton.dancevisible 
+coroutine.wrap(KCLQHO_fake_script)()
+local function CKVSDZZ_fake_script() -- DancesButton.dancevisible 
 	local script = Instance.new('LocalScript', DancesButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -652,10 +681,11 @@ local function ULMJBXW_fake_script() -- DancesButton.dancevisible
 		script.Parent.Parent.Parent.AntiFlingFrame.Visible = false
 		script.Parent.Parent.Parent.HubsFrame.Visible = false
 		script.Parent.Parent.Parent.FlingAllFrame.Visible = false
+		script.Parent.Parent.Parent.welcome.Visible = false
 	end)
 end
-coroutine.wrap(ULMJBXW_fake_script)()
-local function IAXRTQG_fake_script() -- CreditsButton.creditsvisible 
+coroutine.wrap(CKVSDZZ_fake_script)()
+local function MOUWP_fake_script() -- CreditsButton.creditsvisible 
 	local script = Instance.new('LocalScript', CreditsButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -665,18 +695,19 @@ local function IAXRTQG_fake_script() -- CreditsButton.creditsvisible
 		script.Parent.Parent.Parent.AntiFlingFrame.Visible = false
 		script.Parent.Parent.Parent.HubsFrame.Visible = false
 		script.Parent.Parent.Parent.FlingAllFrame.Visible = false
+		script.Parent.Parent.Parent.welcome.Visible = false
 	end)
 end
-coroutine.wrap(IAXRTQG_fake_script)()
-local function EPZJBFL_fake_script() -- NetlessV3.netlessScript 
+coroutine.wrap(MOUWP_fake_script)()
+local function FJAA_fake_script() -- NetlessV3.netlessScript 
 	local script = Instance.new('LocalScript', NetlessV3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Crypoth/Netless/main/Netless%20v3",true))();
 	end)
 end
-coroutine.wrap(EPZJBFL_fake_script)()
-local function AXXVWHQ_fake_script() -- dancewradio.dancewradioscript 
+coroutine.wrap(FJAA_fake_script)()
+local function CNQGERA_fake_script() -- dancewradio.dancewradioscript 
 	local script = Instance.new('LocalScript', dancewradio)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -686,16 +717,16 @@ local function AXXVWHQ_fake_script() -- dancewradio.dancewradioscript
 	
 	
 end
-coroutine.wrap(AXXVWHQ_fake_script)()
-local function BALTY_fake_script() -- rickrolldance.rickrolldancescript 
+coroutine.wrap(CNQGERA_fake_script)()
+local function UIMSY_fake_script() -- rickrolldance.rickrolldancescript 
 	local script = Instance.new('LocalScript', rickrolldance)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Crypoth/ferickrolldance/main/rickroll",true))();
 	end)
 end
-coroutine.wrap(BALTY_fake_script)()
-local function OCLJI_fake_script() -- flingall.flingallscriptr 
+coroutine.wrap(UIMSY_fake_script)()
+local function XBZP_fake_script() -- flingall.flingallscriptr 
 	local script = Instance.new('LocalScript', flingall)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -703,24 +734,24 @@ local function OCLJI_fake_script() -- flingall.flingallscriptr
 	end)
 	
 end
-coroutine.wrap(OCLJI_fake_script)()
-local function AXWXTH_fake_script() -- antifling.antiflingscript 
+coroutine.wrap(XBZP_fake_script)()
+local function BUUAGJP_fake_script() -- antifling.antiflingscript 
 	local script = Instance.new('LocalScript', antifling)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Crypoth/flingall/main/ezfling",true))();
 	end)
 end
-coroutine.wrap(AXWXTH_fake_script)()
-local function KIKZXKX_fake_script() -- space.spacehubscript 
+coroutine.wrap(BUUAGJP_fake_script)()
+local function DIVF_fake_script() -- space.spacehubscript 
 	local script = Instance.new('LocalScript', space)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Crypoth/spacehub/main/spacehub?token=GHSAT0AAAAAABWNX73IAQJU7VPTGZQ6EVLOYWJDROA",true))();
 	end)
 end
-coroutine.wrap(KIKZXKX_fake_script)()
-local function UVLAJRQ_fake_script() -- _1hub.1hubscript 
+coroutine.wrap(DIVF_fake_script)()
+local function YVAG_fake_script() -- _1hub.1hubscript 
 	local script = Instance.new('LocalScript', _1hub)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -728,24 +759,24 @@ local function UVLAJRQ_fake_script() -- _1hub.1hubscript
 	end)
 	
 end
-coroutine.wrap(UVLAJRQ_fake_script)()
-local function WNRGREU_fake_script() -- pineapple.pineapplescript 
+coroutine.wrap(YVAG_fake_script)()
+local function HJVBXLR_fake_script() -- pineapple.pineapplescript 
 	local script = Instance.new('LocalScript', pineapple)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Crypoth/pineapple/main/kys",true))();
 	end)
 end
-coroutine.wrap(WNRGREU_fake_script)()
-local function EFQTF_fake_script() -- matty.pineapplescript 
+coroutine.wrap(HJVBXLR_fake_script)()
+local function IHKJNAN_fake_script() -- matty.mattyscript 
 	local script = Instance.new('LocalScript', matty)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Crypoth/mattyhub/main/kys?token=GHSAT0AAAAAABWNX73I5YRZ32VBVNIIMBDKYWKKN4A",true))();
 	end)
 end
-coroutine.wrap(EFQTF_fake_script)()
-local function BWZA_fake_script() -- CloseGui.LocalScript 
+coroutine.wrap(IHKJNAN_fake_script)()
+local function SWNIZ_fake_script() -- CloseGui.LocalScript 
 	local script = Instance.new('LocalScript', CloseGui)
 
 	local FrameGui = script.Parent.Parent.Parent.FrameGui
@@ -754,8 +785,48 @@ local function BWZA_fake_script() -- CloseGui.LocalScript
 		FrameGui.Visible = false
 	end)
 end
-coroutine.wrap(BWZA_fake_script)()
-local function GMAGMNJ_fake_script() -- OpenGui.LocalScript 
+coroutine.wrap(SWNIZ_fake_script)()
+local function CBFIAL_fake_script() -- FrameGui.moveable 
+	local script = Instance.new('LocalScript', FrameGui)
+
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(CBFIAL_fake_script)()
+local function CBGQU_fake_script() -- OpenGui.LocalScript 
 	local script = Instance.new('LocalScript', OpenGui)
 
 	local FrameGui = script.Parent.Parent.FrameGui
@@ -764,4 +835,4 @@ local function GMAGMNJ_fake_script() -- OpenGui.LocalScript
 		FrameGui.Visible = true
 	end)
 end
-coroutine.wrap(GMAGMNJ_fake_script)()
+coroutine.wrap(CBGQU_fake_script)()
